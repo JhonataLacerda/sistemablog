@@ -1,7 +1,10 @@
 import { Button, Flex, Stack } from '@chakra-ui/react'
+import { GetServerSideProps } from 'next';
 import { FormEvent, useContext, useState } from 'react'
 import { Input } from '../components/Form/Input'
 import { AuthContext } from '../context/AuthContext';
+import {parseCookies} from 'nookies'
+import { redirect } from 'next/dist/server/api-utils';
 
 export default function Home() {
   
@@ -51,3 +54,4 @@ export default function Home() {
     </Flex>
   )
 }
+
