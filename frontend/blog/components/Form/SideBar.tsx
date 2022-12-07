@@ -2,6 +2,7 @@ import { Box, Icon, Link, Stack, Text } from "@chakra-ui/react";
 import { AiFillHome } from 'react-icons/ai'
 import { MdWork, MdHomeRepairService } from 'react-icons/md'
 import { SiAboutdotme } from 'react-icons/si'
+import { api } from "../../services/api";
 
 
 export function SideBar() {
@@ -16,19 +17,19 @@ export function SideBar() {
                     </Text>
                     <Stack spacing="1" ml="-95" mt="8" align="strech">
                      
-                        <Link display="flex" color="#ccb271">
+                        <Link display="flex"  href={`http://localhost:3000/home`}  color="#ccb271">
                             <Icon as={AiFillHome} fontSize="20" />
                             <Text ml="4" fontWeight="medium" >INICIO</Text>
                         </Link>
-                        <Link display="flex" color="#ccb271">
+                        <Link display="flex" href={`http://localhost:3000/sobre`} color="#ccb271">
                             <Icon as={SiAboutdotme} fontSize="20" />
                             <Text ml="4" fontWeight="medium" >SOBRE</Text>
                         </Link>
-                        <Link display="flex" color="#ccb271">
+                        <Link display="flex" href={`http://localhost:3000/servicos`} color="#ccb271">
                             <Icon as={MdHomeRepairService} fontSize="20" />
                             <Text ml="4" fontWeight="medium" >SERVIÇOS</Text>
                         </Link>
-                        <Link display="flex" color="#ccb271">
+                        <Link display="flex" href={`http://localhost:3000/portifolio`}color="#ccb271">
                             <Icon as={MdWork} fontSize="20" />
                             <Text ml="4" fontWeight="medium" >PORTIFÓLIO</Text>
                         </Link>
