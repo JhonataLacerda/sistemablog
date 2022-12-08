@@ -56,7 +56,7 @@ const SocialButton = ({
 export default function LargeWithAppLinksAndSocial() {
   return (
     <Box  
-      bgColor="white" color="black">
+      bgColor="#0f2b3b" color="white">
       <Container as={Stack} maxW={'6xl'}  py={100}>
         <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing={8}>
           <Stack align={'flex-start'}>
@@ -68,12 +68,12 @@ export default function LargeWithAppLinksAndSocial() {
           <Stack align={'flex-start'}>
             <Footer>Navegação</Footer>
             <Link href={'#'}>Inicio</Link>
-            <Link href={'#'}>Blog</Link>
+            <Link href={'#post'}>Blog</Link>
           </Stack>
 
           <Stack align={'flex-start'}>
             <Footer>Demais opções</Footer>
-            <Link href={'#sobre'}>Serviço</Link>
+            <Link href={'#servicos'}>Serviço</Link>
             <Link href={'#'}>Portifólio</Link>
           </Stack>
 

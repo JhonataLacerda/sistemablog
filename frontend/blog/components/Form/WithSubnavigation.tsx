@@ -29,7 +29,7 @@ import {
     return (
       <Box >
         <Flex 
-          bg={useColorModeValue('gray.800', 'gray.100')}
+          bg={useColorModeValue('#0f2b3b', 'gray.100')}
           color={useColorModeValue('gray.600', 'white')}
           minH={'60px'}
           py={{ base: 2 }}
@@ -234,26 +234,26 @@ import {
   const NAV_ITEMS: Array<NavItem> = [
     {
       label: 'INICIO',
-      href: '#'
+      href: 'http://localhost:3000/#'
     },
     {
       label: 'SOBRE',
-      href:"#sobre"
+      href:"http://localhost:3000/#sobre"
     },
     {
       label: 'SERVIÇOS',
-      href: '#servicos',
+      href: 'http://localhost:3000/#servicos',
     },
     {
       label: 'BLOG',
-      href: '#post',
+      href: 'http://localhost:3000/blog',
     },
     {
       label: 'PORTIFÓLIO',
-      href: '#portifolio',
+      href: 'http://localhost:3000/#portifolio',
     },
     {
       label: 'CONTATO',
-      href: '#contato',
+      href: 'http://localhost:3000/#contato',
     },
   ];
